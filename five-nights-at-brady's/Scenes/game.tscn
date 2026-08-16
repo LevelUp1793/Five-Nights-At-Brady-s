@@ -1,0 +1,1632 @@
+[gd_scene load_steps=29 format=3 uid="uid://qs0p4lusr1ca"]
+
+[ext_resource type="Script" uid="uid://co6su84gqo4vs" path="res://Scripts/game.gd" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://e5chjh2txa3i" path="res://Sprites/bradySmile.jpg" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://jeb8fegr3tr" path="res://Sprites/bradyMew.jpg" id="3_3dryh"]
+[ext_resource type="Texture2D" uid="uid://bqbbjhsi13wlo" path="res://Sprites/krishThumbsUp.jpg" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://b3sglqnppj4nf" path="res://Sprites/puppetBoxWind.png" id="5_wowpa"]
+[ext_resource type="Texture2D" uid="uid://bcn347ng3ag5i" path="res://Sprites/tommySchoolPout.jpeg" id="6_i6g32"]
+[ext_resource type="Texture2D" uid="uid://b6oovsy1iuk1h" path="res://icon.svg" id="7_1l0tm"]
+
+[sub_resource type="Theme" id="Theme_wrm1d"]
+default_font_size = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebmjs"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wowpa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3dryh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1l0tm"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6g32"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l0tm"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v158k"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4fw4"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldgsr"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5yvi"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rku1e"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfjv2"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1phco"]
+atlas = ExtResource("5_wowpa")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nb51f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6g32")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1l0tm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v158k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4fw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ldgsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5yvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rku1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfjv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1phco")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wowpa"]
+radius = 17.7927
+
+[sub_resource type="Animation" id="Animation_1l0tm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../bradyJS:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../bradyJS:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1108, 8)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../bradyJS:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.947383, 0.947383)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../tommyJS:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(763, 8)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../tommyJS:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9, 0.9)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../tommyJS:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../krishJS:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../krishJS:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.57803, 2.57803)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../krishJS:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2044, -244)]
+}
+
+[sub_resource type="Animation" id="Animation_h4fw4"]
+resource_name = "jumpscareBrady"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../bradyJS:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -39.81), Vector2(0, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../bradyJS:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.4, 0.4), Vector2(1.2, 1.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../bradyJS:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_o5yvi"]
+resource_name = "jumpscareKrish"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../krishJS:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -40), Vector2(0, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../krishJS:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.6, 0.6)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../krishJS:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_v158k"]
+resource_name = "jumpscare"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -40), Vector2(0, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.9, 0.9), Vector2(2.7, 2.7)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_ldgsr"]
+resource_name = "jumpscareTommy"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../tommyJS:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -40), Vector2(0, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../tommyJS:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../tommyJS:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h4fw4"]
+_data = {
+&"RESET": SubResource("Animation_1l0tm"),
+&"jumpscareBrady": SubResource("Animation_h4fw4"),
+&"jumpscareKrish": SubResource("Animation_o5yvi"),
+&"jumpscareTest": SubResource("Animation_v158k"),
+&"jumpscareTommy": SubResource("Animation_ldgsr")
+}
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_ebmjs")
+metadata/_edit_horizontal_guides_ = [-245.0]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1152, 448)
+
+[node name="titleScreen" type="Node2D" parent="."]
+
+[node name="cameraTsPoint" type="Node2D" parent="titleScreen"]
+position = Vector2(1152, 448)
+
+[node name="bgTs" type="Polygon2D" parent="titleScreen"]
+position = Vector2(576, 128)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-32, -32, 1184, -32, 1184, 672, -32, 672)
+
+[node name="startButton" type="MarginContainer" parent="titleScreen"]
+offset_left = 704.0
+offset_top = 192.0
+offset_right = 896.0
+offset_bottom = 384.0
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="titleScreen/startButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="titleScreen/startButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="howToPlayButton" type="MarginContainer" parent="titleScreen"]
+offset_left = 704.0
+offset_top = 480.0
+offset_right = 896.0
+offset_bottom = 672.0
+mouse_filter = 0
+
+[node name="Panel" type="Panel" parent="titleScreen/howToPlayButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="titleScreen/howToPlayButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "How To Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="fnabTextTs" type="MarginContainer" parent="titleScreen"]
+offset_left = 1216.0
+offset_top = 160.0
+offset_right = 1536.0
+offset_bottom = 320.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="titleScreen/fnabTextTs"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Five Nights 
+At Brady's"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="closeGameTextTs" type="MarginContainer" parent="titleScreen"]
+offset_left = 616.0
+offset_top = 728.0
+offset_right = 1000.0
+offset_bottom = 768.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="titleScreen/closeGameTextTs"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 20
+text = "Esc closes the game at any time"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bradyTweakTs" type="AnimatedSprite2D" parent="titleScreen"]
+position = Vector2(1376, 544)
+sprite_frames = SubResource("SpriteFrames_wowpa")
+autoplay = "default"
+frame_progress = 0.659264
+
+[node name="devText" type="Label" parent="titleScreen"]
+visible = false
+offset_left = 672.0
+offset_top = 128.0
+offset_right = 943.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 30
+text = "Dev mode enabled"
+
+[node name="versionText" type="Label" parent="titleScreen"]
+offset_left = 1664.0
+offset_top = 720.0
+offset_right = 1712.0
+offset_bottom = 762.0
+theme_override_font_sizes/font_size = 30
+text = "1.0"
+
+[node name="howToPlayScreen" type="Node2D" parent="."]
+
+[node name="cameraHtpPoint" type="Node2D" parent="howToPlayScreen"]
+position = Vector2(1152, 1824)
+
+[node name="bgHowToPlay" type="Polygon2D" parent="howToPlayScreen"]
+position = Vector2(576, 1504)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-32, -32, 1184, -32, 1184, 672, -32, 672)
+
+[node name="backToMenuButton" type="MarginContainer" parent="howToPlayScreen"]
+offset_left = 1472.0
+offset_top = 1760.0
+offset_right = 1664.0
+offset_bottom = 1952.0
+mouse_filter = 0
+
+[node name="Panel" type="Panel" parent="howToPlayScreen/backToMenuButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="howToPlayScreen/backToMenuButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Back To Menu"
+autowrap_mode = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="howToPlayTitle" type="RichTextLabel" parent="howToPlayScreen"]
+offset_left = 704.0
+offset_top = 1504.0
+offset_right = 1312.0
+offset_bottom = 1664.0
+theme_override_font_sizes/normal_font_size = 100
+text = "How To Play"
+
+[node name="howToPlayText" type="RichTextLabel" parent="howToPlayScreen"]
+offset_left = 608.0
+offset_top = 1664.0
+offset_right = 1408.0
+offset_bottom = 2147.0
+theme_override_font_sizes/normal_font_size = 50
+text = "Check the cameras to find where Brady and Tommy are, and stop them from getting to your office by closing the doors. However, don't run out of power or forget to wind up the music box to keep Krish asleep."
+fit_content = true
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="officeScreen" type="Node2D" parent="."]
+
+[node name="cameraOfficePoint" type="Node2D" parent="officeScreen"]
+position = Vector2(3680, 448)
+
+[node name="bgOffice" type="Polygon2D" parent="officeScreen"]
+position = Vector2(3104, 128)
+color = Color(0.501961, 0, 0.635294, 1)
+polygon = PackedVector2Array(-32, -32, 1184, -32, 1184, 672, -32, 672)
+metadata/_edit_lock_ = true
+
+[node name="officeGround" type="Polygon2D" parent="officeScreen"]
+position = Vector2(1464, -120)
+color = Color(0.498039, 0.498039, 0.498039, 1)
+polygon = PackedVector2Array(1608, 696, 2824, 696, 2824, 920, 1608, 920)
+metadata/_edit_lock_ = true
+
+[node name="hallwayL" type="Polygon2D" parent="officeScreen"]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(3408, 288, 3408, 576, 3248, 576, 3248, 288)
+
+[node name="hallwayR" type="Polygon2D" parent="officeScreen"]
+position = Vector2(704, 0)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(3408, 288, 3408, 576, 3248, 576, 3248, 288)
+
+[node name="doorLClosed" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-1672, 104)
+scale = Vector2(0.9375, 0.72)
+color = Color(0.658824, 0.658824, 0.658824, 1)
+polygon = PackedVector2Array(5248, 255.556, 5248, 655.556, 5418.67, 655.556, 5418.67, 255.556)
+
+[node name="doorLChecker" type="Polygon2D" parent="officeScreen/doorLClosed"]
+position = Vector2(-2065.07, 345.224)
+scale = Vector2(1.42857, 1.33333)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5119.14, 157.748, 5238.61, 157.748, 5238.61, 191.082, 5119.14, 191.082)
+
+[node name="yellowChecker0" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-203.093, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker1" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-191.147, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker2" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-179.2, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker3" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-167.253, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker4" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-155.307, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker5" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-143.36, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker6" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-131.413, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker7" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-119.467, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker8" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-107.52, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker9" type="Polygon2D" parent="officeScreen/doorLClosed/doorLChecker"]
+position = Vector2(-95.5733, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="doorLOpen" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-1672, -96)
+scale = Vector2(0.9375, 0.72)
+color = Color(0.658824, 0.658824, 0.658824, 1)
+polygon = PackedVector2Array(5248, 533.333, 5248, 655.556, 5418.67, 655.556, 5418.67, 533.333)
+
+[node name="doorLChecker" type="Polygon2D" parent="officeScreen/doorLOpen"]
+position = Vector2(-2065.07, 345.224)
+scale = Vector2(1.42857, 1.33333)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5119.14, 157.748, 5238.62, 157.749, 5238.62, 191.082, 5119.14, 191.082)
+
+[node name="yellowChecker0" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-203.093, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker1" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-191.147, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker2" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-179.2, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker3" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-167.253, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker4" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-155.307, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker5" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-143.36, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker6" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-131.413, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker7" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-119.467, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker8" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-107.52, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker9" type="Polygon2D" parent="officeScreen/doorLOpen/doorLChecker"]
+position = Vector2(-95.5733, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="doorRClosed" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-936, 106.105)
+scale = Vector2(0.9375, 0.72)
+color = Color(0.658824, 0.658824, 0.658824, 1)
+polygon = PackedVector2Array(5213.87, 252.632, 5213.87, 652.632, 5384.53, 652.632, 5384.53, 252.632)
+
+[node name="doorRChecker" type="Polygon2D" parent="officeScreen/doorRClosed"]
+position = Vector2(-2099.2, 341.521)
+scale = Vector2(1.42857, 1.33333)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5119.14, 157.748, 5238.61, 157.748, 5238.61, 191.082, 5119.14, 191.082)
+
+[node name="yellowChecker0" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-203.093, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker1" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-191.147, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker2" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-179.2, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker3" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-167.253, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker4" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-155.307, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker5" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-143.36, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker6" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-131.413, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker7" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-119.467, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker8" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-107.52, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker9" type="Polygon2D" parent="officeScreen/doorRClosed/doorRChecker"]
+position = Vector2(-95.5733, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="doorROpen" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-936, -96)
+scale = Vector2(0.9375, 0.72)
+color = Color(0.658824, 0.658824, 0.658824, 1)
+polygon = PackedVector2Array(5213.87, 533.333, 5213.87, 655.556, 5384.53, 655.556, 5384.53, 533.333)
+
+[node name="doorRChecker" type="Polygon2D" parent="officeScreen/doorROpen"]
+position = Vector2(-2099.2, 344.444)
+scale = Vector2(1.42857, 1.33333)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5119.14, 157.748, 5238.61, 157.748, 5238.61, 191.082, 5119.14, 191.082)
+
+[node name="yellowChecker0" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-203.093, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker1" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-191.147, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker2" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-179.2, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker3" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-167.253, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker4" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-155.307, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker5" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-143.36, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker6" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-131.413, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker7" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-119.467, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker8" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-107.52, 32.7484)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="yellowChecker9" type="Polygon2D" parent="officeScreen/doorROpen/doorRChecker"]
+position = Vector2(-95.5733, 16.0817)
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(5322.24, 141.667, 5334.18, 141.667, 5334.18, 158.333, 5322.24, 158.333)
+
+[node name="doorButtonL" type="Panel" parent="officeScreen"]
+offset_left = 3432.0
+offset_top = 303.0
+offset_right = 3472.0
+offset_bottom = 343.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1l0tm")
+
+[node name="doorButtonR" type="Panel" parent="officeScreen"]
+offset_left = 3888.0
+offset_top = 304.0
+offset_right = 3928.0
+offset_bottom = 344.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1l0tm")
+
+[node name="table" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-80, 0)
+color = Color(0.533333, 0.254902, 0, 1)
+polygon = PackedVector2Array(3512, 488, 3824, 488, 3824, 504, 3512, 504)
+metadata/_edit_lock_ = true
+
+[node name="legL" type="Polygon2D" parent="officeScreen/table"]
+position = Vector2(16, 0)
+color = Color(0.533333, 0.254902, 0, 1)
+polygon = PackedVector2Array(3520, 504, 3520, 576, 3528, 576, 3528, 504)
+metadata/_edit_lock_ = true
+
+[node name="legR" type="Polygon2D" parent="officeScreen/table"]
+position = Vector2(272, 0)
+color = Color(0.533333, 0.254902, 0, 1)
+polygon = PackedVector2Array(3520, 504, 3520, 576, 3528, 576, 3528, 504)
+metadata/_edit_lock_ = true
+
+[node name="krishFace" type="Sprite2D" parent="officeScreen"]
+position = Vector2(3836, 540)
+scale = Vector2(0.0838328, 0.0838323)
+texture = ExtResource("4_3dryh")
+
+[node name="puppetBox" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-56, 0)
+color = Color(0.352941, 0.607843, 1, 1)
+polygon = PackedVector2Array(3928, 576, 3856, 576, 3856, 504, 3928, 504)
+metadata/_edit_lock_ = true
+
+[node name="stripe" type="Polygon2D" parent="officeScreen/puppetBox"]
+position = Vector2(16, 8)
+color = Color(0.607843, 0, 1, 1)
+polygon = PackedVector2Array(3888, 568, 3864, 568, 3864, 496, 3888, 496)
+metadata/_edit_lock_ = true
+
+[node name="Line2D" type="Line2D" parent="officeScreen/puppetBox"]
+points = PackedVector2Array(3864, 504, 3928, 504, 3928, 576, 3856, 576, 3856, 504)
+closed = true
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+sharp_limit = 1.0
+metadata/_edit_lock_ = true
+
+[node name="krishPos0" type="Node2D" parent="officeScreen/puppetBox"]
+position = Vector2(3892, 540)
+scale = Vector2(0.0838328, 0.0838323)
+
+[node name="krishPos1" type="Node2D" parent="officeScreen/puppetBox"]
+position = Vector2(3892, 512)
+scale = Vector2(0.0838328, 0.0838323)
+
+[node name="krishPos2" type="Node2D" parent="officeScreen/puppetBox"]
+position = Vector2(3892, 492)
+scale = Vector2(0.0838328, 0.0838323)
+
+[node name="krishPos3" type="Node2D" parent="officeScreen/puppetBox"]
+position = Vector2(3892, 476)
+scale = Vector2(0.0838328, 0.0838323)
+
+[node name="puppetTimerCircle" type="AnimatedSprite2D" parent="officeScreen"]
+position = Vector2(3912, 540)
+scale = Vector2(1.81249, 1.81249)
+sprite_frames = SubResource("SpriteFrames_nb51f")
+frame_progress = 0.899282
+
+[node name="Area2D" type="Area2D" parent="officeScreen/puppetTimerCircle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="officeScreen/puppetTimerCircle/Area2D"]
+shape = SubResource("CircleShape2D_wowpa")
+
+[node name="camsMonitor" type="Polygon2D" parent="officeScreen"]
+position = Vector2(-24, 4)
+color = Color(0.862745, 0.862745, 0.784314, 1)
+polygon = PackedVector2Array(3508, 400, 3592, 400, 3596, 424, 3596, 444, 3592, 468, 3508, 468, 3504, 444, 3504, 424)
+
+[node name="screen" type="Polygon2D" parent="officeScreen/camsMonitor"]
+color = Color(0.389287, 0.389287, 0.389287, 1)
+polygon = PackedVector2Array(3516, 408, 3584, 408, 3584, 460, 3516, 460)
+
+[node name="base" type="Polygon2D" parent="officeScreen/camsMonitor"]
+position = Vector2(8, -8)
+color = Color(0.862745, 0.862745, 0.784314, 1)
+polygon = PackedVector2Array(3528, 476, 3524, 492, 3560, 492, 3556, 476)
+
+[node name="camsButton" type="MarginContainer" parent="officeScreen"]
+offset_left = 3620.0
+offset_top = 396.0
+offset_right = 3708.0
+offset_bottom = 484.0
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="officeScreen/camsButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="officeScreen/camsButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 0
+theme_override_font_sizes/normal_font_size = 25
+text = "Cams"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="powerText" type="Label" parent="officeScreen"]
+offset_left = 3192.0
+offset_top = 640.0
+offset_right = 3260.0
+offset_bottom = 663.0
+text = "Power: X"
+
+[node name="usageText" type="Label" parent="officeScreen"]
+offset_left = 3192.0
+offset_top = 680.0
+offset_right = 3260.0
+offset_bottom = 703.0
+text = "Usage: X"
+
+[node name="timeText" type="Label" parent="officeScreen"]
+offset_left = 3976.0
+offset_top = 640.0
+offset_right = 4044.0
+offset_bottom = 663.0
+text = "0:00"
+
+[node name="darkness" type="Polygon2D" parent="officeScreen"]
+visible = false
+color = Color(0, 0, 0, 0.705882)
+polygon = PackedVector2Array(3072, 96, 4288, 96, 4288, 800, 3072, 800)
+
+[node name="camsScreen" type="Node2D" parent="."]
+position = Vector2(388, 476)
+
+[node name="cameraCamsPoint" type="Node2D" parent="camsScreen"]
+position = Vector2(3292, 1348)
+
+[node name="bgCams" type="Polygon2D" parent="camsScreen"]
+position = Vector2(2716, 1028)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-28, -32, 1180, -32, 1180, 672, -28, 672)
+metadata/_edit_lock_ = true
+
+[node name="officeButton" type="MarginContainer" parent="camsScreen"]
+offset_left = 2924.0
+offset_top = 1372.0
+offset_right = 3012.0
+offset_bottom = 1460.0
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="camsScreen/officeButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="camsScreen/officeButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 0
+theme_override_font_sizes/normal_font_size = 25
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="camTree" type="Node2D" parent="camsScreen"]
+position = Vector2(3516, 1412)
+scale = Vector2(1.71168, 1.71168)
+
+[node name="Line2D" type="Line2D" parent="camsScreen/camTree"]
+position = Vector2(32, -287.711)
+points = PackedVector2Array(-48, 384, -48, 392, 0, 392, 0, 360, -48, 360, -48, 392, -48, 376, -104, 376, -104, 328, -128, 328, -128, 272, -104, 272, -104, 248, -144, 248, -144, 272, -128, 272, -104, 272, -104, 248, -112, 248, -112, 227, -80, 227, -80, 211, -40, 211, -40, 187, -80, 187, -80, 211, -8, 211, -8, 235, 56, 235, 56, 291, 88, 291, 88, 315, 56, 315, 56, 291, 88, 291, 88, 304, 120, 304, 120, 352, 80, 352, 80, 376, 0, 376)
+width = 5.0
+default_color = Color(0.691357, 0.691357, 0.691357, 1)
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="camsScreen/camTree"]
+offset_left = -16.0
+offset_top = 72.2887
+offset_right = 32.0
+offset_bottom = 103.289
+theme_override_colors/font_color = Color(0.690196, 0.690196, 0.690196, 1)
+text = "You"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam1Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2632, -1143.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam1Label" type="Label" parent="camsScreen/camTree/cam1Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam2Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2448, -1127.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam2Label" type="Label" parent="camsScreen/camTree/cam2Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "02"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam3Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2656, -1191.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam3Label" type="Label" parent="camsScreen/camTree/cam3Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "03"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam4Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2440, -1183.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam4Label" type="Label" parent="camsScreen/camTree/cam4Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "04"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam5Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2640, -1247.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam5Label" type="Label" parent="camsScreen/camTree/cam5Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "05"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam6Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2536, -1263.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam6Label" type="Label" parent="camsScreen/camTree/cam6Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "06"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cam7Button" type="Polygon2D" parent="camsScreen/camTree"]
+position = Vector2(-2584, -1303.71)
+polygon = PackedVector2Array(2544, 1192, 2576, 1192, 2576, 1208, 2544, 1208)
+
+[node name="cam7Label" type="Label" parent="camsScreen/camTree/cam7Button"]
+offset_left = 2544.0
+offset_top = 1192.0
+offset_right = 2576.0
+offset_bottom = 1208.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "07"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="camsBrady" type="Sprite2D" parent="camsScreen"]
+position = Vector2(2932, 1276)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_wrm1d")
+
+[node name="camsTommy" type="Sprite2D" parent="camsScreen"]
+position = Vector2(3188, 1340)
+scale = Vector2(0.0583336, 0.0583336)
+texture = ExtResource("6_i6g32")
+
+[node name="camText" type="Label" parent="camsScreen"]
+offset_left = 2764.0
+offset_top = 1060.0
+offset_right = 2949.0
+offset_bottom = 1115.0
+theme_override_font_sizes/font_size = 40
+text = "Camera X"
+
+[node name="gameoverScreen" type="Node2D" parent="."]
+
+[node name="cameraGameoverPoint" type="Node2D" parent="gameoverScreen"]
+position = Vector2(5824, 456)
+
+[node name="gameoverBG" type="Polygon2D" parent="gameoverScreen"]
+position = Vector2(5192, 112)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-8, 0, 1208, 0, 1208, 704, -8, 704)
+
+[node name="gameoverText" type="Label" parent="gameoverScreen"]
+offset_left = 5376.0
+offset_top = 303.0
+offset_right = 5490.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 40
+text = "Game
+Over"
+
+[node name="restartButton" type="MarginContainer" parent="gameoverScreen"]
+offset_left = 5632.0
+offset_top = 256.0
+offset_right = 5824.0
+offset_bottom = 448.0
+scale = Vector2(0.604596, 0.604596)
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="gameoverScreen/restartButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="gameoverScreen/restartButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Restart"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quitButton" type="MarginContainer" parent="gameoverScreen"]
+offset_left = 5632.0
+offset_top = 496.0
+offset_right = 5824.0
+offset_bottom = 688.0
+scale = Vector2(0.604596, 0.604596)
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="gameoverScreen/quitButton"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="gameoverScreen/quitButton/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="deathFaces" type="Node2D" parent="gameoverScreen"]
+position = Vector2(6088, 440)
+
+[node name="deathBrady" type="Sprite2D" parent="gameoverScreen/deathFaces"]
+visible = false
+texture = ExtResource("2_wrm1d")
+
+[node name="deathTommy" type="Sprite2D" parent="gameoverScreen/deathFaces"]
+visible = false
+scale = Vector2(0.239255, 0.239255)
+texture = ExtResource("6_i6g32")
+
+[node name="deathKrish" type="Sprite2D" parent="gameoverScreen/deathFaces"]
+visible = false
+scale = Vector2(0.497618, 0.497618)
+texture = ExtResource("4_3dryh")
+
+[node name="winScreen" type="Node2D" parent="."]
+
+[node name="winCamsPoint" type="Node2D" parent="winScreen"]
+position = Vector2(5792, 1824)
+
+[node name="winBg" type="Polygon2D" parent="winScreen"]
+position = Vector2(5192, 1472)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-8, 0, 1208, 0, 1208, 704, -8, 704)
+
+[node name="sixText" type="Label" parent="winScreen"]
+offset_left = 5608.0
+offset_top = 1584.0
+offset_right = 5991.0
+offset_bottom = 1721.0
+theme_override_font_sizes/font_size = 100
+text = "6:00 AM"
+
+[node name="restartButton2" type="MarginContainer" parent="winScreen"]
+offset_left = 5512.0
+offset_top = 1928.0
+offset_right = 5704.0
+offset_bottom = 2120.0
+scale = Vector2(0.604596, 0.604596)
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="winScreen/restartButton2"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="winScreen/restartButton2/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Restart"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quitButton2" type="MarginContainer" parent="winScreen"]
+offset_left = 5952.0
+offset_top = 1930.0
+offset_right = 6144.0
+offset_bottom = 2122.0
+scale = Vector2(0.604596, 0.604596)
+mouse_filter = 0
+theme = SubResource("Theme_wrm1d")
+
+[node name="Panel" type="Panel" parent="winScreen/quitButton2"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ebmjs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="winScreen/quitButton2/Panel"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 50
+text = "Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="jumpscareAnimations" type="Node2D" parent="."]
+position = Vector2(4461, 4122)
+
+[node name="testJS" type="Sprite2D" parent="jumpscareAnimations"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_1l0tm")
+
+[node name="testJSAnimation" type="AnimationPlayer" parent="jumpscareAnimations/testJS"]
+libraries = {
+&"": SubResource("AnimationLibrary_h4fw4")
+}
+
+[node name="bradyJS" type="Sprite2D" parent="jumpscareAnimations"]
+position = Vector2(1108, 8)
+scale = Vector2(0.947383, 0.947383)
+texture = ExtResource("3_3dryh")
+
+[node name="bradyJSAnimation" type="AnimationPlayer" parent="jumpscareAnimations/bradyJS"]
+libraries = {
+&"": SubResource("AnimationLibrary_h4fw4")
+}
+
+[node name="tommyJS" type="Sprite2D" parent="jumpscareAnimations"]
+position = Vector2(763, 8)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("6_i6g32")
+
+[node name="tommyJSAnimation" type="AnimationPlayer" parent="jumpscareAnimations/tommyJS"]
+libraries = {
+&"": SubResource("AnimationLibrary_h4fw4")
+}
+
+[node name="krishJS" type="Sprite2D" parent="jumpscareAnimations"]
+position = Vector2(2044, -244)
+scale = Vector2(2.57803, 2.57803)
+texture = ExtResource("4_3dryh")
+
+[node name="krishJSAnimation" type="AnimationPlayer" parent="jumpscareAnimations/krishJS"]
+libraries = {
+&"": SubResource("AnimationLibrary_h4fw4")
+}
+
+[node name="jumpscareTimer" type="Timer" parent="jumpscareAnimations"]
+wait_time = 1.5
+one_shot = true
+
+[node name="editorComments" type="Node2D" parent="."]
+
+[node name="editorComment0" type="Label" parent="editorComments"]
+offset_left = 736.0
+offset_top = -160.0
+offset_right = 1578.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 150
+text = "Title Screen"
+
+[node name="editorComment1" type="Label" parent="editorComments"]
+offset_left = 480.0
+offset_top = 1216.0
+offset_right = 1891.0
+offset_bottom = 1421.0
+theme_override_font_sizes/font_size = 150
+text = "How To Play Screen"
+
+[node name="editorComment2" type="Label" parent="editorComments"]
+offset_left = 3200.0
+offset_top = -160.0
+offset_right = 4160.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 150
+text = "Office Screen"
+
+[node name="editorComment3" type="Label" parent="editorComments"]
+offset_left = 3200.0
+offset_top = 1216.0
+offset_right = 4160.0
+offset_bottom = 1421.0
+theme_override_font_sizes/font_size = 150
+text = "Cams Screen"
+
+[node name="editorComment4" type="Label" parent="editorComments"]
+offset_left = 3072.0
+offset_top = 3538.0
+offset_right = 4688.0
+offset_bottom = 4367.0
+theme_override_font_sizes/font_size = 150
+text = "idk why these stay big in the editor so i moved them right here                          ->"
+autowrap_mode = 2
+
+[node name="editorComment5" type="Label" parent="editorComments"]
+offset_left = 5128.0
+offset_top = -168.0
+offset_right = 6470.0
+offset_bottom = 37.0
+theme_override_font_sizes/font_size = 150
+text = "Game Over Screen"
+
+[node name="editorComment6" type="Label" parent="editorComments"]
+offset_left = 5384.0
+offset_top = 1216.0
+offset_right = 6216.0
+offset_bottom = 1421.0
+theme_override_font_sizes/font_size = 150
+text = "Win Screen"
+
+[node name="hourTimer" type="Timer" parent="."]
+wait_time = 60.0
+
+[node name="powerOutTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="gui_input" from="titleScreen/startButton" to="." method="_on_start_button_gui_input"]
+[connection signal="gui_input" from="titleScreen/howToPlayButton" to="." method="_on_how_to_play_button_gui_input"]
+[connection signal="gui_input" from="howToPlayScreen/backToMenuButton" to="." method="_on_back_to_menu_button_gui_input"]
+[connection signal="gui_input" from="officeScreen/doorButtonL" to="." method="_on_door_button_l_gui_input"]
+[connection signal="gui_input" from="officeScreen/doorButtonR" to="." method="_on_door_button_r_gui_input"]
+[connection signal="mouse_entered" from="officeScreen/puppetTimerCircle/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="officeScreen/puppetTimerCircle/Area2D" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="gui_input" from="officeScreen/camsButton" to="." method="_on_cams_button_gui_input"]
+[connection signal="gui_input" from="camsScreen/officeButton" to="." method="_on_office_button_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam1Button/cam1Label" to="." method="_on_cam_1_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam2Button/cam2Label" to="." method="_on_cam_2_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam3Button/cam3Label" to="." method="_on_cam_3_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam4Button/cam4Label" to="." method="_on_cam_4_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam5Button/cam5Label" to="." method="_on_cam_5_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam6Button/cam6Label" to="." method="_on_cam_6_label_gui_input"]
+[connection signal="gui_input" from="camsScreen/camTree/cam7Button/cam7Label" to="." method="_on_cam_7_label_gui_input"]
+[connection signal="gui_input" from="gameoverScreen/restartButton" to="." method="_on_restart_button_gui_input"]
+[connection signal="gui_input" from="gameoverScreen/quitButton" to="." method="_on_quit_button_gui_input"]
+[connection signal="gui_input" from="winScreen/restartButton2" to="." method="_on_restart_button_gui_input"]
+[connection signal="gui_input" from="winScreen/quitButton2" to="." method="_on_quit_button_gui_input"]
+[connection signal="timeout" from="jumpscareAnimations/jumpscareTimer" to="." method="_on_jumpscare_timer_timeout"]
+[connection signal="timeout" from="hourTimer" to="." method="_on_hour_timer_timeout"]
+[connection signal="timeout" from="powerOutTimer" to="." method="_on_power_out_timer_timeout"]
